@@ -11,11 +11,170 @@ html,body{
 }
 
 .main{
-     background-color:#0f0d0d;
+    position: relative; 
+    height: 100%;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    height: 5vw;
+    width: 100%;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+
+.nav2{
+    display: flex;
+    /* background-color: chocolate; */
+    gap: 8vw;
+    padding-right: 0.5vw;
+    align-items: center;
+}
+
+.nav h2{
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+.nav2 h3{
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: black;
+}
+.nav2 button{
+    font-size: 1.5vw;
+    font-weight: 100;
+    padding: 0.5vw 0.7vw;
+    background-color: lightseagreen;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    
+}
+
+.nav i{
+    font-size: 1.5vw;
+    font-weight: 800;
+    display: none;
+}
+
+.content{
+    height: calc(100% - 100px);
+    width: 100%;
+    /* background: burlywood; */
+    display: flex;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    /* background-color: coral; */
+    padding: 5vw 4vw;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    /* background-color: antiquewhite; */
+}
+
+.left h1{
+    font-size: 4vw;
+    line-height: 4vw;
+}
+
+.left h1 span {
+    color: lightseagreen;
+    font-weight: 100;
+}
+
+.left p{
+    font-size: 1.5vw;
+    font-weight: 100;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.content button{
+     font-size: 1.5vw;
+     padding: 0.5vw 0.5vw;
+     background-color: lightseagreen;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     font-weight: 100;
      
 }
 
-.page1{
-    height: 100vh;
+.right img{
+    height: 100%;
     width: 100%;
+}
+
+
+
+
+@media (max-width:600px) {
+    .nav{
+        padding: 0 5vw;
+        height: 15vw;
+        
+    }
+
+    .nav h2{
+        font-size: 4vw;
+    }
+
+    .nav2 h3{
+        font-size: 3vw;
+        display: none;
+    }
+
+    .nav button{
+        display: none;
+    }
+
+    .nav i{
+        display: block;
+        font-size: 3.5vw;
+    }
+
+    .content{
+        height: calc(100% - 15vw);
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .left p{
+        font-size: 4vw;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 4vw;
+    }
+    .left h1{
+        font-size: 10vw;
+        line-height: 8vw;
+    }
+
+    .content button{
+        font-size: 4vw;
+        padding: 2vw 3vw;
+        border-radius: 8px;
+        font-weight: 600;
+   }
+
+    .right{
+        width: 100%;
+    }
+
 }
